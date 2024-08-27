@@ -1,8 +1,8 @@
 import "./AllDeleteButton.css";
 
-const AllDeleteButton = () => {
+const AllDeleteButton = (props) => {
     return (
-        <button className="all-delete-button">Vymazat vše</button>
+        <button onClick={props.deleteAllMovies} className="all-delete-button">Vymazat vše</button>
     );
 }
 
